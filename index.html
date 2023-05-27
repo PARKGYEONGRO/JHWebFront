@@ -67,7 +67,7 @@
         </header>
 
         <article>
-
+            <div id="map" style="width:100%;height:350px;"></div>
         </article>
 
 
@@ -111,6 +111,32 @@
     </div>
 </body>
 
+
+<script>
+    // Kakao Map API 로드
+    function initMap() {
+        var mapContainer = document.getElementById('map');
+        var mapOptions = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+        var map = new kakao.maps.Map(mapContainer, mapOptions);
+    }
+
+    // Kakao Map API 비동기 로드
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://dapi.kakao.com/v2/maps/sdk.js?appkey=d0f0a85e5b1eb56c2fca862d88cea02b&autoload=false';
+        fjs.parentNode.insertBefore(js, fjs);
+        js.onload = function() {
+            kakao.maps.load(function() {
+                initMap();
+            });
+        };
+    }(document, 'script', 'kakao-sdk'));
+</script>
 <script>
     const listItems = document.querySelectorAll('.categoryList');
 
@@ -135,5 +161,14 @@
             headerBottom.classList.remove('headerScrolled');
         }
         });
+
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+    mapOption = { 
+        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+        level: 3 // 지도의 확대 레벨
+    };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
 </script>
 </html>
