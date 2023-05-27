@@ -46,7 +46,7 @@
                 <div class="inner">
                     <div class="headerLogo">
                         <a href="./index.html">
-                            <img src="./src/image/footerLogo.png" alt="헤더 로고">
+                            <img class="logoImg" src="./src/image/footerLogo.png" alt="헤더 로고">
                         </a>
                     </div>
                     <div class="headerCategory">
@@ -126,5 +126,14 @@
     function handleMouseOut(event) {
       event.target.classList.remove('on');
     }
+
+    window.addEventListener('scroll', function() {
+        var headerBottom = document.querySelector('.headerBottom');
+        if (window.scrollY > 0) {
+            headerBottom.classList.add('headerScrolled');
+        } else {
+            headerBottom.classList.remove('headerScrolled');
+        }
+        });
 </script>
 </html>
