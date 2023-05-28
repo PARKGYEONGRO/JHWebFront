@@ -1,0 +1,315 @@
+@import url(./reset.css);
+
+#wrap {
+    font-size: 14px;
+}
+
+
+.headerTop {
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+    height: 40px;
+}
+
+li.topTel {
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    vertical-align: top;
+    line-height: 45px;
+    margin: -5px 23px 0 0;
+    display: inline-block;
+    height: 100%;
+    padding: 0 20px;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+}
+
+.topTel > span {
+    color: #aaa;
+    vertical-align: top;
+    font-size: 14px;
+    padding: 0 0 0 3px;
+    display: inline-block;
+}
+
+li.communityBtn {
+    position: relative;
+    z-index: 1;
+    line-height: 35px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.communityBtn {
+    cursor: pointer;
+    position: relative;
+    padding: 0;
+    text-align: left;
+    transition: all 0.3s;
+    background-repeat: no-repeat;
+}
+
+.communityBtn:hover> .community {
+    display: block;
+    position: absolute;
+}
+
+.communityBtn > a {
+    margin: 2px 7px 0 0 !important;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 0 0 15px;
+}
+
+.community {
+    display: none;
+    text-align: left;
+    margin: 5px 0 0;
+    width: 110px;
+    background-color: rgba(255,255,255,0.95);
+    padding: 20px 10px 19px 22px;
+    box-shadow: 0 -1px 9px 1px rgba(159,159,159,0.3);
+    -webkit-box-shadow: 0 -1px 9px 1px rgba(159,159,159,0.3);
+    z-index: 9999;
+}
+
+.community > ul > li > a {
+    line-height: 1.7;
+    font-size: 15px !important;
+    font-weight: 400;
+    display: block;
+    color: #aaa !important;
+    letter-spacing: 0em;
+}
+
+.community > ul > li > a:hover {
+
+    color: #000000 !important;
+
+}
+
+
+.headerBottom {
+    width: 100%;
+}
+
+.headerScrolled {
+    position: fixed;
+    top: 0;
+    height: 40px;
+    background-color: #ffffff; /* 원하는 배경색으로 변경 */
+    z-index: 100; /* 다른 요소 위에 표시하기 위해 z-index 설정 */
+    opacity: 0.95;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+
+/* 원하는 스타일 추가 가능 */
+.headerScrolled .headerCategory {
+    margin: 4px 0 0;
+}
+
+.headerScrolled .logoImg {
+    height: 30px;
+}
+
+
+.headerLogo {
+    position: absolute;
+    z-index: 600;
+    display: inline-block;
+    margin-left: 1%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.headerCategory {
+    text-align: center;
+    margin: 23px 0 0;
+    display: block;
+}
+
+.headerCategory > ul > li {
+    position: relative;
+    z-index: 1;
+    line-height: 18px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.headerCategory > ul > li > a {
+    padding: 8px 0 30px;
+    margin: 3px 20px 0;
+    z-index: 1;
+    color: #000;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.on::after {
+    position: absolute;
+    left: 50%;
+    top: 2px;
+    width: 4px;
+    height: 4px;
+    margin-left: -2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #000;
+    content: '';
+}
+
+.inner {
+    width: 1200px;
+    height: 100%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.scollTop {
+    position: fixed;
+    text-align: center;
+    right: 10px;
+    bottom: 62px;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+.scollTop > img {
+    border-radius: 10%;
+}
+
+.scollTop:hover {
+    content: url(../image/scrollUpHover.PNG);
+}
+
+
+section {
+    background-color: #aaa;
+    width: 100%;
+    height: 1000px;
+}
+
+#map {
+    width: 600px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
+.footerLayout {
+    width: 100%;
+    margin: 80px 0 0;
+}
+
+.footerTop {
+    border-bottom: 1px solid #555555;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footerNav {
+    width: 1200px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 18px 0;
+}
+
+.footerNav > li + li {
+    padding-left: 11px;
+    position: relative;
+}
+
+.footerNav > li + li::before {
+    content: "";
+    width: 1px;
+    height: 8px;
+    background: #666666;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.footerNav > li {
+    display: inline-block;
+    position: relative;
+    padding-right: 11px;
+    line-height: 13px;
+}
+
+.footerNav > li > a{
+    display: block;
+    font-size: 13px;
+    color: #adadad;
+}
+
+.footerBottom {
+    position: relative;
+}
+
+.footerInfo{
+    padding: 34px 0 40px;
+    overflow: hidden;
+}
+
+.address, .footerLogo{
+    display: inline-block;
+}
+
+.footerLogo {
+    margin: 7px 40px 7px 0;
+    width: 180px;
+    height: 58px;
+    background: url(../image/footerLogo.png) no-repeat left;
+}
+
+
+address > span{
+    display: inline-block;
+    width: 1px;
+    margin: 0 9px;
+    height: 8px;
+    background: #666666;
+    vertical-align: middle;
+}
+
+address {
+    font-style: normal;
+    font-size: 13px;
+    line-height: 26px;
+    color: #adadad;
+}
+
+
+.copyright{
+    margin-top: 14px;
+    font-size: 14px;
+    color: #777777;
+}
