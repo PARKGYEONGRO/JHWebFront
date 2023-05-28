@@ -165,22 +165,6 @@ li.communityBtn {
     content: '';
 }
 
-
-
-
-
-
-
-
-
-
-
-article {
-    background-color: #aaa;
-    width: 100%;
-    height: 1000px;
-}
-
 .inner {
     width: 1200px;
     height: 100%;
@@ -204,6 +188,30 @@ article {
 .scollTop:hover {
     content: url(../image/scrollUpHover.PNG);
 }
+
+
+section {
+    background-color: #aaa;
+    width: 100%;
+    height: 1000px;
+}
+
+#map {
+    width: 600px;
+    height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     width: 100%;
